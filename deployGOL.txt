@@ -20,7 +20,7 @@ pipeline {
         //invoke command to stop tomcat service
         bat 'sc stop Tomcat8'
         // copy war file from build target to webapp Tomcat folder
-        bat 'xcopy /y C:\\Program Files (x86)\\Jenkins\\workspace\\Gol_Pipeline\\gameoflife-web\\target\\gameoflife.war "C:\Program Files\Apache Software Foundation\Tomcat 8.0\webapps"'
+        bat 'xcopy /y C:\\Program Files (x86)\\Jenkins\\workspace\\Gol_Pipeline\\gameoflife-web\\target\\gameoflife.war "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.0\\webapps"'
         //invoke command to start tomcat service      
         bat 'sc start Tomcat8'
       }
